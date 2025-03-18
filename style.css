@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -5,7 +7,8 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif; 
+    /* font-family: 'Roboto', sans-serif;  */
+    font-family: "Newsreader", serif;
 }
 
 .borders{
@@ -73,7 +76,7 @@ a:hover{
 
 section {
     padding-top: 4vh; 
-    height: 96vh;
+    height: 90vh;
     margin: 5rem 10rem;
     box-sizing: border-box; 
     min-height: fit-content;
@@ -93,7 +96,6 @@ section {
 .about-content {
     display: flex;
     align-items: center;
-    gap: 30px;
 }
 
 .section_pic-container { 
@@ -126,10 +128,11 @@ section {
 }
 
 .about_title{
-    font-size: 5rem;
+    font-size: 3rem;
     text-align: center;
     color: purple;
 }
+
 
 .typewriter {
     white-space: nowrap;
@@ -208,6 +211,13 @@ border-radius: 2rem;
 }
 
 #about {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+#skills {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -316,4 +326,42 @@ border-radius: 2rem;
     transform: scale(1.05); /* Slight scale-up */
     background-color: #eae2f8; /* Light purple */
     box-shadow: 0 8px 20px rgba(122, 11, 192, 0.4); /* Purple Glow */
+}
+
+.handwritten-container {
+    width: 100%;
+    padding: 40px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.handwritten-text {
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;  /* Adjust font size */
+    color: #3e3e3e;  /* Dark grey color */
+    background: linear-gradient(to bottom, #fdfdfd 0%, #e9e9e9 100%); /* Paper-like gradient */
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for paper effect */
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+    display: inline-block;
+    text-align: left; /* Align text inside the bubble */
+}
+
+/* Adding a slight hand-drawn effect */
+.handwritten-text:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #d1c8c1;
+    border-radius: 8px;
+    pointer-events: none;
+    z-index: -1; /* Send border behind the text */
 }

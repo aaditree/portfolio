@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <nav class="rounded-nav">
+        <ul>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#resume" class="nav-link">Resume</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    <section id="profile">
+        <div class="section_pic-container popout">
+            <img class="borders" src="./assets/profile-pic.png" alt="Aaditree's profile picture">
+        </div>
+       <div class="section_text">
+        <p class="section_text_p1">
+            Hello, I'm
+        </p>
+        <h1 class="title typewriter">Aaditree Jaisswal</h1>
+        <p class="section_text_p2">
+            Software Engineer
+        </p>
+        <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">
+                Download CV
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                Contact Info
+            </button>
+        </div>
+        <div id="socials-container">
+            <img 
+            src="./assets/linkedin.png" 
+            alt="My Linkedin" 
+            class="icon" 
+            onclick="window.open('https://www.linkedin.com/in/aaditree-jaisswal/')"/>
+
+            <img 
+            src="./assets/github.png" 
+            alt="My Github" 
+            class="icon" 
+            onclick="window.open('https://www.github.com/Aaditree/')"/>
+        </div>
+       </div>
+    </section>
+    <section id="about">
+        <div class="section_pic-container ">
+            <img src="./assets/coder.png" alt="Girl Coding">
+        </div>
+        <div class="section-container">
+            <div class="section_text">  
+                <div class="about-content">
+                    <!-- Right: About Me Text -->
+                    <div class="section_text">
+                        <h1 class="about_title">About Me</h1>
+                        <p class="section_text_p2">
+                            I am Aaditree Jaisswal, a passionate Software Engineer with expertise in Full-Stack Development. 
+                            <br>Currently pursuing my Master of Science in Computer Science at the University of Massachusetts Amherst (GPA: 3.8/4).
+                            <br>I enjoy reading mangas and watching shows like Psych and Brooklyn Nine Nine!
+                        </p>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <div>
+        </div>
+    </section>
+    <section id="skills">
+        <div>
+            <h3 class="title">What I Bring to the Table</h3>
+            <br>
+            <div class="skills-flowchart">
+                <div class="skill-node" id="programming-languages">
+                    <h4>Programming Languages</h4>
+                    <ul>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>C++</li>
+                        <li>TypeScript</li>
+                        <li>R</li>
+                        <li>JavaScript</li>
+                        <li>HTML/CSS</li>
+                    </ul>
+                </div>
+                <div class="skill-node" id="frameworks-tools">
+                    <h4>Frameworks & Tools</h4>
+                    <ul>
+                        <li>Flask</li>
+                        <li>Django</li>
+                        <li>Angular</li>
+                        <li>TensorFlow</li>
+                        <li>PyTorch</li>
+                        <li>Ansible</li>
+                        <li>Node.js</li>
+                    </ul>
+                </div>
+                <div class="skill-node" id="databases">
+                    <h4>Databases</h4>
+                    <ul>
+                        <li>PostgreSQL</li>
+                        <li>MySQL</li>
+                        <li>SQLite</li>
+                        <li>Elasticsearch</li>
+                    </ul>
+                </div>
+                <div class="skill-node" id="other-tools">
+                    <h4>Other Tools</h4>
+                    <ul>
+                        <li>Linux Shell Scripting</li>
+                        <li>Git</li>
+                        <li>Android Studio</li>
+                    </ul>
+                </div>
+            </div>
+        </div> 
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>

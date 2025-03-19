@@ -5,12 +5,6 @@ menu.classList.toggle("open");
 icon.classList.toggle("open");
 }
 
-window.onload = function() {
-    window.history.replaceState({}, document.title, window.location.pathname);
-    window.scrollTo(0, 0);
-  }
-
-
   const sections = document.querySelectorAll("section");
   const navLinks = document.querySelectorAll(".nav-link");
   

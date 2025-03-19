@@ -20,7 +20,6 @@
           <li><a href="#education-and-experience" class="nav-link">E&E</a></li>
           <li><a href="#projects" class="nav-link">Projects</a></li>
           <li><a href="#resume" class="nav-link">Resume</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </nav>
     <section id="profile">
@@ -41,9 +40,18 @@
             <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">
                 Download CV
             </button>
-            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            <button id="openModal" class="btn btn-color-1">
                 Contact Info
             </button>
+            <div class="modal" id="modal">
+                <div class="modal-inner">
+                    <h2><u>Email:</u> aaditreejaisswal06@gmail.com</h2>
+                    <br>
+                    <h2><u>Phone:</u> +1 413-437-6757</h2>
+                    <br>
+                    <button class="btn btn-color-2" id="closeModal">close</button>
+                </div>
+            </div>
         </div>
         <div id="socials-container">
             <img 
@@ -65,7 +73,7 @@
             <div class="section_text">  
                 <div class="about-content">
                     <div class="section_text">
-                        <h1 class="about_title">A little bit about me</h1>
+                        <h1 class="title">A little bit about me</h1>
                     </div>
                     <div class="handwritten-container">
                         <div class="handwritten-text">👶 Born in Dubai</div>

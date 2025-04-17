@@ -5,6 +5,7 @@ menu.classList.toggle("open");
 icon.classList.toggle("open");
 }
 
+
   const sections = document.querySelectorAll("section");
   const navLinks = document.querySelectorAll(".nav-link");
   

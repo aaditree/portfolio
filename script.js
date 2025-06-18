@@ -5,6 +5,21 @@ menu.classList.toggle("open");
 icon.classList.toggle("open");
 }
 
+const menu = document.querySelector('.menu-links');
+const icon = document.querySelector('.hamburger-icon');
+document.addEventListener('click', function(event) {
+    // If menu is open
+    if (menu.classList.contains('open')) {
+      // Check if click was outside hamburgerIcon and mobileMenu
+      if (
+        !menu.contains(event.target) &&
+        !icon.contains(event.target)
+      ) {
+        menu.classList.remove('open');
+      }
+    }
+  });
+
 
   const sections = document.querySelectorAll("section");
   const navLinks = document.querySelectorAll(".nav-link");

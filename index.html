@@ -17,9 +17,9 @@
         <ul>
           <li><a href="#about" class="nav-link">About</a></li>
           <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#education-and-experience" class="nav-link">E&E</a></li>
+          <li><a href="#education-and-experience" class="nav-link">Journey</a></li>
           <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#resume" class="nav-link">Resume</a></li>
+          <li><a href="assets/resume.pdf" class="nav-link" target="_blank">Resume</a></li>
         </ul>
       </nav>
       <div class="hamburger">
@@ -27,9 +27,9 @@
         <div class="mobile-menu menu-links">
             <a href="#about" class="nav-link">About</a>
             <a href="#skills" class="nav-link">Skills</a>
-            <a href="#education-and-experience" class="nav-link">E&E</a>
+            <a href="#education-and-experience" class="nav-link">Education & Experience</a>
             <a href="#projects" class="nav-link">Projects</a>
-            <a href="#resume" class="nav-link">Resume</a>
+            <a href="assets/resume.pdf" class="nav-link" target="_blank">Resume</a>
           </div>
       </div>
     <section id="profile">
@@ -50,18 +50,10 @@
             <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">
                 Download CV
             </button>
-            <button id="openModal" class="btn btn-color-1">
-                Contact Info
-            </button>
-            <div class="modal" id="modal">
-                <div class="modal-inner">
-                    <h2><u>Email:</u> aaditreejaisswal06@gmail.com</h2>
-                    <br>
-                    <h2><u>Phone:</u> +1 413-437-6757</h2>
-                    <br>
-                    <button class="btn btn-color-2" id="closeModal">close</button>
-                </div>
-            </div>
+            <a href="mailto:aaditreejaisswal06@gmail.com?subject=Inquiry%20from%20Your%20Portfolio%20Website&body=Hi%20Aaditree...">
+              <button id="openModal" class="btn btn-color-1">
+                Email Me
+            </button></a>
         </div>
         <div id="socials-container">
             <img 
@@ -79,91 +71,90 @@
        </div>
     </section>
     <section id="about">
-        <div class="section-container">
-            <div class="section_text">  
-                <div class="about-content">
-                    <div class="section_text">
-                        <h1 class="title">A little bit about me</h1>
-                    </div>
-                    <div class="handwritten-container">
-                        <div class="handwritten-text">👶 Born in Dubai</div>
-                        <div class="handwritten-text">🌱 Grew up in India</div>
-                        <br>
-                        <div class="handwritten-text">🍰 Love eating cheesecake</div>
-                        <div class="handwritten-text">💻 Avid coder</div>
-                        <br>
-                        <div class="handwritten-text">📺 Shows on repeat are Psych and B99</div>
-                        <br>
-                        <div class="handwritten-text">🎵 Currently playing Chances by Athlete</div>
-                        <br>
-                        <div class="handwritten-text">📖 Manga reader</div>
-                        <div class="handwritten-text">📷 Photographer</div>
-                    </div>
-                </div> 
-            </div>
-        </div>
-        <div>
-        </div>
-    </section>
-    <section id="skills">
+      <div class="section-container">
         <div class="section_text">
-            <h3 class="title">What I Bring to the Table</h3>
-            <br>
-            <div class="skills-flowchart">
-                <div class="skill-node" id="programming-languages">
-                    <h4>Languages</h4>
-                    <ul>
-                        <li>Python</li>
-                        <li>Java</li>
-                        <li>C++</li>
-                        <li>TypeScript</li>
-                        <li>R</li>
-                        <li>JavaScript</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                    </ul>
-                </div>
-                <div class="skill-node" id="frameworks-tools">
-                    <h4>Frameworks & Tools</h4>
-                    <ul>
-                        <li>Flask</li>
-                        <li>Django</li>
-                        <li>Angular</li>
-                        <li>TensorFlow</li>
-                        <li>PyTorch</li>
-                        <li>Ansible</li>
-                        <li>Node.js</li>
-                        <li>Git</li>
-                        <li>Jenkins</li>
-                        <li>Shell Scripting</li>
-                        <li>Cypress</li>
-                        <li>Redux</li>
-                        <li>GeoPy</li>
-                    </ul>
-                </div>
-                <div class="skill-node" id="databases">
-                    <h4>Databases</h4>
-                    <ul>
-                        <li>PostgreSQL</li>
-                        <li>MySQL</li>
-                        <li>SQLite</li>
-                        <li>Elasticsearch</li>
-                    </ul>
-                </div>
-                <div class="skill-node" id="other-tools">
-                    <h4>Other Tools</h4>
-                    <ul>
-                        <li>Linux</li>
-                        <li>Firebase</li>
-                        <li>Jira</li>
-                        <li>Google Cloud</li>
-                        <li>Tableau</li>
-                        <li>Android Studio</li>
-                    </ul>
-                </div>
+          <div class="about-content">
+            <div class="section_text">
+              <h1 class="title">A little bit about me</h1>
+              <p class="about-summary">
+                I'm a Computer Science grad student at UMass Amherst, with a background in full-stack development, system security, and a few late nights debugging Python. I’ve worked at Cisco, Advisor360°, and on independent research — and I’m always curious about how things work under the hood.
+              </p>
+              <p class="about-summary">
+                Outside of code, I’m usually reading manga, hunting for good cheesecake, or rewatching *Brooklyn Nine-Nine*.
+              </p>
             </div>
-        </div> 
-    </section>
+            <div class="handwritten-container">
+              <div class="handwritten-text">💻 Avid coder</div>
+              <br>
+              <div class="handwritten-text">🎵 Currently playing Sapphire by Ed Sheeran</div>
+              <br>
+              <div class="handwritten-text">📖 Manga reader</div>
+              <div class="handwritten-text">📷 Photographer</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>    
+    <section id="skills">
+      <div class="section_text">
+          <h3 class="title">What I Bring to the Table</h3>
+          <br>
+          <div class="skills-flowchart">
+              <div class="skill-node" id="programming-languages">
+                  <h4>Languages</h4>
+                  <ul>
+                      <li>Python</li>
+                      <li>Java</li>
+                      <li>C++</li>
+                      <li>TypeScript</li>
+                      <li>R</li>
+                      <li>JavaScript</li>
+                      <li>HTML</li>
+                      <li>CSS</li>
+                  </ul>
+              </div>
+              <div class="skill-node" id="frameworks-tools">
+                  <h4>Frameworks & Tools</h4>
+                  <ul>
+                      <li>Flask</li>
+                      <li>Django</li>
+                      <li>Angular</li>
+                      <li>TensorFlow</li>
+                      <li>PyTorch</li>
+                      <li>Ansible</li>
+                      <li>Node.js</li>
+                      <li>Git</li>
+                      <li>Jenkins</li>
+                      <li>Shell Scripting</li>
+                      <li>Cypress</li>
+                      <li>Redux</li>
+                      <li>GeoPy</li>
+                  </ul>
+              </div>
+              <div class="skill-node" id="databases">
+                  <h4>Databases</h4>
+                  <ul>
+                      <li>PostgreSQL</li>
+                      <li>MySQL</li>
+                      <li>SQLite</li>
+                      <li>Elasticsearch</li>
+                  </ul>
+              </div>
+              <div class="skill-node" id="other-tools">
+                  <h4>Other Tools</h4>
+                  <ul>
+                      <li>Linux</li>
+                      <li>Firebase</li>
+                      <li>Jira</li>
+                      <li>Google Cloud</li>
+                      <li>Tableau</li>
+                      <li>Android Studio</li>
+                  </ul>
+              </div>
+          </div>
+      </div> 
+  </section>
+    
     <section id="education-and-experience">
         <div class="container">
             <h3 class="title">Education & Experience</h3>
@@ -234,14 +225,6 @@
       
         </div>
       </section>
-      
-    <section id="resume">
-        <div class="section_text">
-            <h3 class="title">Resume</h3>
-            <br>
-            <embed src="assets/resume.pdf#toolbar=0" width="100%" height="1200px"/>
-        </div>
-    </section>
     <script src="script.js"></script>
 </body>
 </html>

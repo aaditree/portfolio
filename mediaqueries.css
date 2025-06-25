@@ -96,12 +96,14 @@
     
       .mobile-menu.open {
         display: flex;
+        background-color: white;
       }
     
       .mobile-menu a {
         padding: 1rem;
         text-align: center;
         font-size: 1.1rem;
+        
       }
     
       .mobile-menu a:hover {

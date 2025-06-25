@@ -1,80 +1,35 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: #DFCAE4;
 }
 
 body {
-    /* font-family: 'Roboto', sans-serif;  */
     font-family: "Newsreader", serif;
+    color: #333333;
+    background-color: #DFCAE4;
   }
   
 .borders{
-    border: 5px solid #555;
-    box-shadow: inset -30px 0 30px -20px rgba(0, 0, 0, 0.7);
+    border: 5px solid #333;
+    box-shadow: inset -30px 0 30px -20px white;
 }
 html{
     scroll-behavior: smooth;
-}
-
-p{
-    color: black;
 }
 
 a, .btn{
     transition: all 300ms ease;
 }
 
-nav{
-justify-content: space-around;
-align-items: center;
-top: 7vh;
-display: flex;
-position: fixed;
-z-index: 1;
-left: 25%;
-right: 25%;
-width: 100px;
-}
-
 .nav-link.active {
-    background-color: #7A0BC0; /* Purple */
+    cursor: pointer;
+    background-color: #8B5E83;
     color: white;
-    border-radius: 10px;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
 }
-.nav-link {
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-    padding: 8px 15px;
-    transition: 0.3s ease-in-out;
-}
-
-a{
-    color: black;
-    text-decoration: none;
-    text-decoration-color: white;
-}
-
-a:hover{
-    color: #FF6F61;
-    text-decoration: none;
-    text-decoration-color: white;
-    font-size:2.5rem;
-}
-
-.logo{
-    font-size: 2rem;
-}
-
-.logo:hover{
-    cursor: default;
-}
-
 
 section {
-    padding-top: 4vh; 
-    height: 90vh;
     margin: 5rem 10rem;
     box-sizing: border-box; 
     min-height: fit-content;
@@ -83,18 +38,12 @@ section {
 .section-container { 
     display: flex;
 }
-/* PROFILE SECTION */
 #profile {
     display: flex;
     justify-content: center;
-    gap: 10rem;
-    height: 80vh;
+    padding: 4rem 0;
 }
 
-.about-content {
-    display: flex;
-    align-items: center;
-}
 
 .section_pic-container { 
     display: flex; 
@@ -122,7 +71,7 @@ section {
 .title { 
     font-size: 3rem; 
     text-align: center;
-    color: purple;
+    color: #8B5E83;
 }
 
 .typewriter {
@@ -186,15 +135,16 @@ border-radius: 2rem;
 .btn-color-1,
 .btn-color-2 {
     border: rgb(53, 53, 53) 0.1rem solid;
-    color: purple;
+    background-color: #C7A9D0;
 }
 
 .btn-color-1:hover,
 .btn-color-2:hover { 
     cursor: pointer;
-    color: #FF6F61;
-    background: rgb(53, 53, 53);
-    border: rgb(255, 255, 255) 0.1rem solid;
+    background-color: #8B5E83;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
 
 }
 
@@ -214,7 +164,6 @@ border-radius: 2rem;
     margin: 10px auto;
     max-width: 700px;
     line-height: 1.6;
-    color: #333;
     font-style: italic;
 }
 
@@ -290,19 +239,20 @@ border-radius: 2rem;
   
   .rounded-nav a {
     text-decoration: none;
-    color: #2e2c3a;
     padding: 10px 20px;
     border-radius: 20px;
   }
   
   .rounded-nav a:hover,
   .rounded-nav a:focus {
-    background-color: white;
-    color: #FF6F61;
+    cursor: pointer;
+    background-color: #8B5E83;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
     
   }
 
-/* Flowchart Container */
 .skills-flowchart {
     display: flex;
     justify-content: space-between;
@@ -334,21 +284,17 @@ border-radius: 2rem;
     font-size: 18px;
     margin-bottom: 8px;
     text-align: center;
-    color: black;
 }
 
 .skill-node ul li:hover {
     font-size: 28px;
     margin-bottom: 8px;
     text-align: center;
-    color: black;
     font-style: italic;
 }
 
 .skill-node:hover {
     transform: scale(1.05); 
-    background-color: #DFCAE4; 
-    box-shadow: 0 8px 20px rgba(122, 11, 192, 0.4); 
 }
 
 .handwritten-container {
@@ -357,23 +303,6 @@ border-radius: 2rem;
     text-align: center;
     margin-top: 20px;
 }
-
-.handwritten-text {
-    font-size: 20px;  /* Adjust font size */
-    color: white;  /* Dark grey color */
-    
-    background-color: black;
-    padding: 15px;
-    margin: 15px 15px 15px 15px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for paper effect */
-    max-width: 80%;
-    line-height: 1.5;
-    display: inline-block;
-    text-align: left; /* Align text inside the bubble */
-}
-
-/* Adding a slight hand-drawn effect */
 .handwritten-text:before {
     content: "";
     position: absolute;
@@ -384,10 +313,9 @@ border-radius: 2rem;
     border: 2px solid #d1c8c1;
     border-radius: 8px;
     pointer-events: none;
-    z-index: -1; /* Send border behind the text */
+    z-index: -1; 
 }
 
-/*****EXPERIENCE SECTION*****/
 
 .edu-exp {
 	width: 40%;
@@ -413,7 +341,6 @@ border-radius: 2rem;
 	font-size: 20px;
 }
 .experience-content h3 {
-	color: purple;
 	font-weight: 500;
 	margin-bottom: 2px;
 	font-size: 17px;
@@ -532,17 +459,14 @@ justify-content: center;
   
   .project-desc {
     font-size: 0.95rem;
-    color: #333;
     margin: 0.5rem 0;
   }
   
   .project-tags {
     font-size: 0.8rem;
-    color: #555;
     background: #f2f2f2;
     padding: 0.4rem 0.6rem;
     border-radius: 6px;
     display: inline-block;
     margin-top: 0.5rem;
   }
-  

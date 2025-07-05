@@ -5,8 +5,12 @@
 
 body {
     font-family: "Newsreader", serif;
-    color: #333333;
-    background-color: #DFCAE4;
+    color: white;
+    /* background-color: #DFCAE4; */
+    background-image: url('assets/background.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
   }
   
 .borders{
@@ -71,7 +75,7 @@ section {
 .title { 
     font-size: 3rem; 
     text-align: center;
-    color: #8B5E83;
+    color: peachpuff;
 }
 
 .typewriter {
@@ -101,6 +105,8 @@ gap: 1rem;
 .icon{
     cursor: pointer;
     height: 2rem;
+    background-color: white;
+    border-radius: 100%;
 }
 
 .popout {
@@ -164,7 +170,6 @@ border-radius: 2rem;
     margin: 10px auto;
     max-width: 700px;
     line-height: 1.6;
-    font-style: italic;
 }
 
 
@@ -224,8 +229,7 @@ border-radius: 2rem;
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 1000;
-    width: fit-content;
+    width: 100%;
   }
   
   .rounded-nav ul {
@@ -241,6 +245,7 @@ border-radius: 2rem;
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 20px;
+    color: peachpuff;
   }
   
   .rounded-nav a:hover,
@@ -254,48 +259,75 @@ border-radius: 2rem;
   }
 
 .skills-flowchart {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-    flex-wrap: wrap;
-    margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 .skill-node {
-    border-radius: 10px;
-    padding: 20px;
-    width: 250px;
-    box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.7);
-}
-
-.skill-node h4 {
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: 15px;
-    text-decoration: underline;
-}
-
-.skill-node ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.skill-node ul li {
-    font-size: 18px;
-    margin-bottom: 8px;
-    text-align: center;
-}
-
-.skill-node ul li:hover {
-    font-size: 28px;
-    margin-bottom: 8px;
-    text-align: center;
-    font-style: italic;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.7);
+  background-color: peachpuff;
+  height: auto;
+  transition: transform 0.3s ease;
 }
 
 .skill-node:hover {
-    transform: scale(1.05); 
+  transform: scale(1.05);
 }
+
+.skill-node h4 {
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
+  text-decoration: underline;
+  color: #333;
+}
+
+.skill-node details summary {
+  list-style: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.skill-node ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.skill-node ul li {
+  font-size: 18px;
+  margin-bottom: 8px;
+  text-align: center;
+  color: white;
+  font-style: bold;
+  transition: font-size 0.3s ease, font-style 0.3s ease;
+}
+
+.skill-node ul li:hover {
+  font-size: 28px;
+  font-style: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skills-flowchart {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill-node {
+    width: 80%;
+  }
+}
+
 
 .handwritten-container {
     width: 100%;
@@ -328,6 +360,7 @@ border-radius: 2rem;
 	padding: 30px 10px;
 	margin-bottom: 20px;
     box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.7);
+    background-color: peachpuff;
 }
 .experience-content {
 	width: 100%;
@@ -464,7 +497,7 @@ justify-content: center;
   
   .project-tags {
     font-size: 0.8rem;
-    background: #f2f2f2;
+    background: peachpuff;
     padding: 0.4rem 0.6rem;
     border-radius: 6px;
     display: inline-block;

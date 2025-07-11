@@ -1,233 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aaditree's Portfolio</title>
-    <link rel="icon" href="./assets/coder_header.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" >
-
-</head>
-<body>
-    <nav class="rounded-nav">
-        <ul>
-          <li><a href="#" class="nav-link">Home</a></li>
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#education-and-experience" class="nav-link">Journey</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="assets/resume.pdf" class="nav-link" target="_blank">Resume</a></li>
-        </ul>
-      </nav>
-      <div class="hamburger">
-        <div class="hamburger-icon" onclick="toggleMenu()">☰</div>
-        <div class="mobile-menu menu-links">
-            <a href="#" class="nav-link">Home</a>
-            <a href="#about" class="nav-link">About</a>
-            <a href="#skills" class="nav-link">Skills</a>
-            <a href="#education-and-experience" class="nav-link">Education & Experience</a>
-            <a href="#projects" class="nav-link">Projects</a>
-            <a href="assets/resume.pdf" class="nav-link" target="_blank">Resume</a>
-          </div>
-      </div>
-    <section id="profile">
-        <div class="section_pic-container popout">
-            <img class="borders" src="./assets/profile-pic.png" alt="Aaditree's profile picture">
-        </div>
-       <div class="section_text">
-        <h3 class="section_text_p1">
-            Hello there! My name is
-        </h3>
-        <br>
-        <h1 class="title typewriter">Aaditree Jaisswal</h1>
-        <br>
-        <p class="section_text_p2">
-            Software Engineer
-        </p>
-        <div class="btn-container">
-            <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">
-                Download CV
-            </button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aaditree Jaisswal - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#recommendations">Recommendations</a></li>
+        <li><a href="assets/resume.pdf" target="_blank">Resume</a></li>
+      </ul>
+    </nav>
+    <section id="home" class="section">
+      <div class="home-container">
+        <img src="assets/profile-pic.png" alt="Profile" class="profile-pic" />
+        <div class="home-text">
+          <h1>Hello! I'm Aaditree Jaisswal</h1>
+          <p>Software Engineer · Computer Science @ UMass Amherst</p>
+          <p>
+            With experience at Cisco, Advisor360°, and in research, I'm passionate
+            about full-stack development, system security, and discovering how
+            things work under the hood.
+          </p>
+          <p>
+            Outside of code, I enjoy manga, cheesecake, and rewatching Brooklyn
+            Nine-Nine.
+          </p>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/aaditree-jaisswal/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/Aaditree" target="_blank">GitHub</a>
             <a href="mailto:aaditreejaisswal06@gmail.com?subject=Inquiry%20from%20Your%20Portfolio%20Website&body=Hi%20Aaditree...">
-              <button id="openModal" class="btn btn-color-1">
-                Email Me
-            </button></a>
+             Email</a>
+          </div>
         </div>
-        <div id="socials-container">
-            <img 
-            src="./assets/linkedin.png" 
-            alt="My Linkedin" 
-            class="icon" 
-            onclick="window.open('https://www.linkedin.com/in/aaditree-jaisswal/')"/>
-
-            <img 
-            src="./assets/github.png" 
-            alt="My Github" 
-            class="icon" 
-            onclick="window.open('https://www.github.com/Aaditree/')"/>
-        </div>
-       </div>
+      </div>
     </section>
-    <section id="about">
-      <div class="about-content">
-        <div class="section_text">
-          <h1 class="title">A little bit about me</h1>
-              <p class="about-summary">
-                I'm a Computer Science grad student at UMass Amherst, with a background in full-stack development, system security, and a few late nights debugging Python. I’ve worked at Cisco, Advisor360°, and on independent research — and I’m always curious about how things work under the hood.
-              </p>
-              <p class="about-summary">
-                Outside of code, I’m usually reading manga, hunting for good cheesecake, or rewatching *Brooklyn Nine-Nine*.
-              </p>
-        </div>
-      </div>
-      </div>
-    </section>    
-    <section id="skills">
-      <div class="section_text">
-          <h3 class="title">What I Bring to the Table</h3>
-          <br>
-          <div class="skills-flowchart">
-  <div class="skill-node">
-    <details>
-      <summary><h4>Languages</h4></summary>
+<section id="skills" class="section">
+  <div class="section-title"><h1>What I Bring to the Table</h1></div>
+  <div class="skills-grid">
+    <div class="skill-box">
+      <h3>Languages & Frameworks</h3>
+      <br>
       <ul>
         <li>Python</li>
         <li>Java</li>
         <li>C++</li>
         <li>TypeScript</li>
-        <li>R</li>
         <li>JavaScript</li>
-        <li>HTML</li>
-        <li>CSS</li>
-      </ul>
-    </details>
-  </div>
-
-  <div class="skill-node">
-    <details>
-      <summary><h4>Frameworks & Tools</h4></summary>
-      <ul>
-        <li>Flask</li>
-        <li>Django</li>
+        <li>R</li>
+        <li>HTML/CSS</li>
         <li>Angular</li>
+        <li>React</li>
+        <li>Node.js</li>
+        <li>Django</li>
+        <li>Flask</li>
         <li>TensorFlow</li>
         <li>PyTorch</li>
-        <li>Ansible</li>
-        <li>Node.js</li>
-        <li>Git</li>
-        <li>Jenkins</li>
-        <li>Shell Scripting</li>
-        <li>Cypress</li>
         <li>Redux</li>
+        <li>Cypress</li>
         <li>GeoPy</li>
       </ul>
-    </details>
-  </div>
+    </div>
+    <div class="skill-box">
+      <h3>DevOps & Testing</h3>
+            <br>
 
-  <div class="skill-node">
-    <details>
-      <summary><h4>Databases</h4></summary>
+      <ul>
+        <li>Git</li>
+        <li>Perforce</li>
+        <li>Jenkins</li>
+        <li>Ansible</li>
+        <li>Shell Scripting</li>
+        <li>Postman</li>
+        <li>Swagger</li>
+      </ul>
+    </div>
+    <div class="skill-box">
+      <h3>Databases & APIs</h3>
+          <br>
       <ul>
         <li>PostgreSQL</li>
         <li>MySQL</li>
-        <li>SQLite</li>
+        <li>SQL</li>
         <li>Elasticsearch</li>
+        <li>RESTful APIs</li>
       </ul>
-    </details>
-  </div>
+    </div>
+    <div class="skill-box">
+      <h3>Platforms & Tools</h3>
+            <br>
 
-  <div class="skill-node">
-    <details>
-      <summary><h4>Other Tools</h4></summary>
       <ul>
         <li>Linux</li>
         <li>Firebase</li>
+        <li>Google Cloud Platform</li>
+        <li>Wireshark</li>
         <li>Jira</li>
-        <li>Google Cloud</li>
+        <li>Confluence</li>
         <li>Tableau</li>
-        <li>Android Studio</li>
+        <li>Power BI</li>
+        <li>MS Excel</li>
       </ul>
-    </details>
+    </div>
   </div>
-</div>
-
-      </div> 
-  </section>
-    
-    <section id="education-and-experience">
-        <div class="container">
-            <h3 class="title">Education & Experience</h3>
-            <br>
-            <div class="edu-exp">
-              <div class="experience-list">
-                <div class="experience-content">
-                  <h2>University of Massachusetts - Amherst </h2>
-                  <h3>2023-2025</h3>
-                  <p>Master of Science in Computer Science</p>
-                </div>
-              </div>
-              <div class="experience-list">
-                <div class="experience-content">
-                  <h2>M.K.S.S.S's Cummins College of Engineering for Women</h2>
-                  <h3>2017-2021</h3>
-                  <p>Bachelor of Technology in Computer Engineering</p>
-                </div>
-              </div>
-            </div>
-            <div class="edu-exp">
-              <div class="experience-list">
-                <div class="experience-content">
-                  <h2>Advisor360</h2>
-                  <h3>2024-2024</h3>
-                  <p>Systems Engineer</p>
-                </div>
-              </div>
-              <div class="experience-list">
-                <div class="experience-content">
-                  <h2>Cisco Systems</h2>
-                  <h3>2021-2023</h3>
-                  <p>Software Engineer II</p>
-                </div>
-              </div>
-            </div>
-          </div>
-    </section>
-    <section id="projects">
-        <h3 class="title">Projects</h3>
-        <div class="project-grid">
-          
-          <!-- InstaSafe Project Card -->
-          <div class="project-card">
-            <a href="https://github.com/aaditree/Child-Safety-Middleware" target="_blank">
+</section>
+<section id="education" class="section">
+    <div class="section-title"><h1>Education</h1></div>
+  <div class="card-grid">
+    <div class="card">
+      <h3>University of Massachusetts Amherst</h3>
+      <p>Master of Science in Computer Science (2023–2025)</p>
+      <p>GPA: 3.9</p>
+      <p>Relevant Coursework: ML, Cybersecurity, Optimization</p>
+    </div>
+    <div class="card">
+      <h3>MKSSS’s Cummins College of Engineering for Women</h3>
+      <p>B.Tech in Computer Engineering (2017–2021)</p>
+    </div>
+  </div>
+</section>
+<section id="experience" class="section">
+    <div class="section-title"><h1>Experience</h1></div>
+  <div class="card-grid">
+    <div class="card">
+      <h3>Advisor360°</h3>
+      <p>Systems Engineer (Summer 2024)</p>
+      <p>Python · Ansible · Jenkins · Shell · Tkinter</p>
+    </div>
+    <div class="card">
+      <h3>Cisco Systems</h3>
+      <p>Software Engineer II (2021–2023)</p>
+      <p>Angular · NgRx · TypeScript · Node.js · Cypress · Git · Jira</p>
+    </div>
+  </div>
+</section>
+    <section id="projects" class="section">
+      <div class="section-title"><h1>Projects</h1></div>
+      <div class="project-grid">
+        <div class="project-card">
+          <a href="https://github.com/aaditree/Child-Safety-Middleware" target="_blank">
               <img src="assets/instasafe.png" alt="Instasafe screenshot" class="project-img">
             </a>
-            <div class="project-info">
-              <h4>Instasafe</h4>
-              <p>Browser Extension</p>
-              <p class="project-desc">Safeguarding child influencers on social media with real-time abuse filtering and trust scores.</p>
-              <div class="project-tags">JavaScript · Regex · Chrome APIs</div>
-            </div>
-          </div>
-      
-          <!-- Ummeed Project Card -->
-          <div class="project-card">
-            <a href="https://github.com/aaditree/Luminaries-Ummeed" target="_blank">
+          <h3>Instasafe</h3>
+          <p>
+            A Chrome extension to protect child influencers using abuse filtering
+            and trust metrics.
+          </p>
+          <small>JavaScript · Regex · Chrome APIs</small>
+        </div>
+        <div class="project-card">
+           <a href="https://github.com/aaditree/Luminaries-Ummeed" target="_blank">
               <img src="assets/ummeed.png" alt="Ummeed screenshot" class="project-img">
             </a>
-            <div class="project-info">
-              <h4>Ummeed</h4>
-              <p>Web App Development</p>
-              <p class="project-desc">Communication portal addressing humanitarian issues using maps, feeds, and Twitter analysis.</p>
-              <div class="project-tags">Django · Firebase · Google Maps API · NLP</div>
-            </div>
-          </div>
-      
+          <h3>Ummeed</h3>
+          <p>
+            Humanitarian portal integrating Google Maps, social media feeds, and
+            NLP tools for awareness.
+          </p>
+          <small>Django · Firebase · Twitter API · NLP</small>
         </div>
-      </section>
-    <script src="script.js"></script>
-</body>
+      </div>
+    </section>
+  <section id="recommendations" class="section">
+  <div class="section-title"><h1>Recommendations</h1></div>
+
+  <div class="carousel">
+    <!-- Clickable recommendation cards -->
+    <a href="https://www.linkedin.com/in/yourprofile/details/recommendations/" class="rec-card-link" target="_blank" rel="noopener noreferrer">
+      <div class="rec-card">
+        <p><em>"I found Aaditree to be a hardworking, inquisitee, intelligent, prompt, and extremely dutiful individual. She was very active in those classes and often participated in class discussions...."</em></p>
+        <p class="rec-author">– Professor Parviz Kermani, UMass Amherst</p>
+        <div class="click-indicator">
+          <span>View on LinkedIn →</span>
+        </div>
+      </div>
+    </a>
+    
+    <a href="https://www.linkedin.com/in/yourprofile/details/recommendations/" class="rec-card-link" target="_blank" rel="noopener noreferrer">
+      <div class="rec-card">
+        <p><em>"She was able to quickly grasp what our team does and was able to contribute to the success of the group. She helped with..."</em></p>
+        <p class="rec-author">– Ednel Crisostomo, Senior Systems Engineer, Advisor360</p>
+        <div class="click-indicator">
+          <span>View on LinkedIn →</span>
+        </div>
+      </div>
+    </a>
+    
+    <a href="https://www.linkedin.com/in/yourprofile/details/recommendations/" class="rec-card-link" target="_blank" rel="noopener noreferrer">
+      <div class="rec-card">
+        <p><em>"Throughout her time with us, Aaditree was able to soak in the knowledge we leverage and then use it to help on several internal projects ranging from automation workflows, to being..."</em></p>
+        <p class="rec-author">– Diane McCorkle, Systems Engineer, Advisor360</p>
+        <div class="click-indicator">
+          <span>View on LinkedIn →</span>
+        </div>
+      </div>
+    </a>
+
+     <a href="https://www.linkedin.com/in/yourprofile/details/recommendations/" class="rec-card-link" target="_blank" rel="noopener noreferrer">
+      <div class="rec-card">
+        <p><em>"I highly recommend Aaditree for any project or team that requires exceptional ownership, leadership, and reliability. She consistently impresses with her ability to take full ownership of features, leading them through every stage from planning to successful completion..."</em></p>
+        <p class="rec-author">– Alex Okrushko, Principal Architect, Cisco</p>
+        <div class="click-indicator">
+          <span>View on LinkedIn →</span>
+        </div>
+      </div>
+    </a>
+
+     <a href="https://www.linkedin.com/in/yourprofile/details/recommendations/" class="rec-card-link" target="_blank" rel="noopener noreferrer">
+      <div class="rec-card">
+        <p><em>"Throughout her time at Cisco , Aaditree has demonstrated a strong aptitude for IT, quickly grasping new concepts and applying them effectively to various projects. One of her standout qualities is exceptional teamwork and collaboration skills...."</em></p>
+        <p class="rec-author">– Sudheesh Suresh K, Project Manager, Cisco</p>
+        <div class="click-indicator">
+          <span>View on LinkedIn →</span>
+        </div>
+      </div>
+    </a>
+     <a href="https://www.linkedin.com/in/yourprofile/details/recommendations/" class="rec-card-link" target="_blank" rel="noopener noreferrer">
+      <div class="rec-card">
+        <p><em>"I had the pleasure of working with Aaditree on multiple projects over two years. She has an in-depth knowledge of programming concepts in Python, Angular and NgRX.
+The one trait that I admire most about her is the sense of ownership. She owns a task end-to-end..."</em></p>
+        <p class="rec-author">– Ankit Sharma, Senior Software Engineer, Cisco</p>
+        <div class="click-indicator">
+          <span>View on LinkedIn →</span>
+        </div>
+      </div>
+    </a>
+     <a href="https://www.linkedin.com/in/yourprofile/details/recommendations/" class="rec-card-link" target="_blank" rel="noopener noreferrer">
+      <div class="rec-card">
+        <p><em>"Aaditree is a highly focused and talented team member. Her technical skills in Angular and domain knowledge of the project is commendable. Her presentational skill is very exceptional ...."</em></p>
+        <p class="rec-author">– Vasu Sagar, Software Engineer, Cisco</p>
+        <div class="click-indicator">
+          <span>View on LinkedIn →</span>
+        </div>
+      </div>
+    </a>
+     <a href="https://www.linkedin.com/in/yourprofile/details/recommendations/" class="rec-card-link" target="_blank" rel="noopener noreferrer">
+      <div class="rec-card">
+        <p><em>"I am delighted to write a recommendation for Aaditree, who has been an exceptional UI Angular developer during our time working together.Throughout our collaboration, Aaditree consistently demonstrated an in-depth understanding of Angular and JavaScript as well as the functional aspects of the business...."</em></p>
+        <p class="rec-author">– Gayatri Srinivasan, Technical Lead, Cisco</p>
+        <div class="click-indicator">
+          <span>View on LinkedIn →</span>
+        </div>
+      </div>
+    </a>
+     <a href="https://www.linkedin.com/in/yourprofile/details/recommendations/" class="rec-card-link" target="_blank" rel="noopener noreferrer">
+      <div class="rec-card">
+        <p><em>"Aaditree is a standout engineer in her field of work. I had the pleasure of onboarding her as a fresh grad and later working with her as a program member for the Internship Program. She is brilliant as a team member and has attention to detail..."</em></p>
+        <p class="rec-author">– Taralima Hazarika, Project Manager, Cisco</p>
+        <div class="click-indicator">
+          <span>View on LinkedIn →</span>
+        </div>
+      </div>
+    </a>
+     <a href="https://www.linkedin.com/in/yourprofile/details/recommendations/" class="rec-card-link" target="_blank" rel="noopener noreferrer">
+      <div class="rec-card">
+        <p><em>"Aaditree is a tremendous asset to our engineering team here at Cisco. As a UX designer, I had the pleasure of sharing our concepts with Aaditree and the team to see how we could bring them to life. She asks astute questions, 
+          identifies any inconsistencies or edge cases that the design team should address, and thinks several steps ahead about how the design concept will be implemented...."</em></p>
+        <p class="rec-author">– Mary Specht, Lead Product Designer, Cisco</p>
+        <div class="click-indicator">
+          <span>View on LinkedIn →</span>
+        </div>
+      </div>
+    </a>
+     <a href="https://www.linkedin.com/in/yourprofile/details/recommendations/" class="rec-card-link" target="_blank" rel="noopener noreferrer">
+      <div class="rec-card">
+        <p><em>"I’ve worked with Aaditree for over a year on 3 big projects. She shows excellent technical, communication, analysis and organizations skills...."</em></p>
+        <p class="rec-author">– Agnieszka Czypionka-Grzesiak, Product Manager, Cisco</p>
+        <div class="click-indicator">
+          <span>View on LinkedIn →</span>
+        </div>
+      </div>
+    </a>
+     <a href="https://www.linkedin.com/in/yourprofile/details/recommendations/" class="rec-card-link" target="_blank" rel="noopener noreferrer">
+      <div class="rec-card">
+        <p><em>"Having known Aaditree Jaisswal for multiple years now, I can strongly vouch for her perseverance, enthusiasm and academic strength. I worked with Aaditree on research projects. Most people whom I work with, drop the activity if they do not see clear progress, or an end to it. 
+          Aaditree, on the other hand, keeps returning to it, and sees to it that it gets done..."</em></p>
+        <p class="rec-author">– Venkatesh Vinayakarao, Professor</p>
+        <div class="click-indicator">
+          <span>View on LinkedIn →</span>
+        </div>
+      </div>
+    </a>
+     <a href="https://www.linkedin.com/in/yourprofile/details/recommendations/" class="rec-card-link" target="_blank" rel="noopener noreferrer">
+      <div class="rec-card">
+        <p><em>"Aaditree is a diverse individual who has the ability to adapt in any environment, whether it to be familiar or foreign to her. Despite, being a computer science student, Aaditree has tapped into business topics and never shies away 
+          from sharing her experiences as well as her own tips and tricks with other students..."</em></p>
+        <p class="rec-author">– Suvania , Scholarship Track</p>
+        <div class="click-indicator">
+          <span>View on LinkedIn →</span>
+        </div>
+      </div>
+    </a>
+    <!-- Add more cards as needed -->
+  </div>
+</section>
+  </body>
 </html>
